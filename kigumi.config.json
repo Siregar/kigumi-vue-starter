@@ -1,0 +1,43 @@
+{
+  "framework": "vue",
+  "typescript": true,
+  "componentsDir": "src/components/ui",
+  "utilsDir": "src/lib",
+  "stylesDir": "src/styles",
+  "theme": {
+    "selected": "default",
+    "palette": "default",
+    "brandColor": "blue"
+  },
+  "aliases": {
+    "@/components": "./src/components",
+    "@/lib": "./src/lib",
+    "@/styles": "./src/styles"
+  },
+  "webAwesome": {
+    "version": "^3.3.1"
+  },
+  "kigumiVersion": "0.17.1",
+  "installedComponents": {
+    "Button": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.748Z",
+      "kigumiVersion": "0.17.1"
+    },
+    "Card": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.751Z",
+      "kigumiVersion": "0.17.1"
+    },
+    "Icon": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.751Z",
+      "kigumiVersion": "0.17.1"
+    },
+    "Input": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.751Z",
+      "kigumiVersion": "0.17.1"
+    }
+  }
+}
