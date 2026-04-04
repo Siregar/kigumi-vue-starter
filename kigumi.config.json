@@ -1,0 +1,358 @@
+{
+  "framework": "vue",
+  "typescript": true,
+  "componentsDir": "src/components/ui",
+  "utilsDir": "src/lib",
+  "stylesDir": "src/styles",
+  "theme": {
+    "selected": "default",
+    "palette": "default",
+    "brandColor": "blue"
+  },
+  "aliases": {
+    "@/components": "./src/components",
+    "@/lib": "./src/lib",
+    "@/styles": "./src/styles"
+  },
+  "webAwesome": {
+    "version": "^3.4.0"
+  },
+  "kigumiVersion": "0.18.3",
+  "installedComponents": {
+    "Button": {
+      "source": "builtin",
+      "installedAt": "2026-04-01T11:36:30.326Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Card": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.751Z",
+      "kigumiVersion": "0.17.1"
+    },
+    "Icon": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.751Z",
+      "kigumiVersion": "0.17.1"
+    },
+    "Input": {
+      "source": "builtin",
+      "installedAt": "2026-03-24T22:36:46.751Z",
+      "kigumiVersion": "0.17.1"
+    },
+    "Dialog": {
+      "source": "builtin",
+      "installedAt": "2026-03-28T21:26:10.858Z",
+      "kigumiVersion": "0.18.2"
+    },
+    "Switch": {
+      "source": "builtin",
+      "installedAt": "2026-03-28T21:26:10.860Z",
+      "kigumiVersion": "0.18.2"
+    },
+    "Textarea": {
+      "source": "builtin",
+      "installedAt": "2026-03-28T21:26:10.860Z",
+      "kigumiVersion": "0.18.2"
+    },
+    "Badge": {
+      "source": "builtin",
+      "installedAt": "2026-03-28T21:26:10.860Z",
+      "kigumiVersion": "0.18.2"
+    },
+    "Divider": {
+      "source": "builtin",
+      "installedAt": "2026-03-28T21:26:10.860Z",
+      "kigumiVersion": "0.18.2"
+    },
+    "AnimatedImage": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.419Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Animation": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Avatar": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "BarChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Breadcrumb": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "BreadcrumbItem": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "BubbleChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ButtonGroup": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Callout": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Carousel": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "CarouselItem": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Chart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Checkbox": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ColorPicker": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Comparison": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "CopyButton": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Details": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "DoughnutChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Drawer": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Dropdown": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "DropdownItem": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "FormatBytes": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "FormatDate": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "FormatNumber": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Include": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "IntersectionObserver": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "LineChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "MutationObserver": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Option": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "PieChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "PolarAreaChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Popover": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Popup": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ProgressBar": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ProgressRing": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "QrCode": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "RadarChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Radio": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "RadioGroup": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Rating": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "RelativeTime": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ResizeObserver": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ScatterChart": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Scroller": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Select": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Skeleton": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Slider": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Spinner": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "SplitPanel": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Tab": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "TabGroup": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "TabPanel": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Tag": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ToastItem": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Tooltip": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "Tree": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.420Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "TreeItem": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.421Z",
+      "kigumiVersion": "0.18.3"
+    },
+    "ZoomableFrame": {
+      "source": "builtin",
+      "installedAt": "2026-04-04T05:49:31.421Z",
+      "kigumiVersion": "0.18.3"
+    }
+  }
+}
