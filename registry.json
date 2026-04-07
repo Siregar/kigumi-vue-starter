@@ -1,0 +1,21 @@
+{
+  "$schema": "https://kigumi.style/schemas/community-registry.json",
+  "name": "kigumi-vue-team",
+  "description": "Example team registry: Vue-based Kigumi compositions. Demonstrates the cross-framework conversion flow used by `kigumi add --from <url> --cross-framework`.",
+  "author": "Kigumi",
+  "license": "MIT",
+  "version": "0.1.0",
+  "frameworks": ["vue"],
+  "components": {
+    "login-example": {
+      "name": "LoginExample",
+      "description": "Login form composed of Card, Input, Button, and Icon. Single-file Vue component with scoped script setup; inline styles only.",
+      "category": "Authentication",
+      "files": {
+        "vue": {
+          "component": "src/components/examples/LoginExample.vue"
+        }
+      }
+    }
+  }
+}
