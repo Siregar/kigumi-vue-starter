@@ -1,8 +1,11 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from 'vue';
-import '@awesome.me/webawesome/dist/components/button/button.js';
-import type WaElement from '@awesome.me/webawesome/dist/components/button/button.js';
 import './Button.css';
+
+let loadPromise: Promise<unknown> | null = null;
+function ensureLoaded() {
+  return (loadPromise ??= import('@awesome.me/webawesome/dist/components/button/button.js'));
+}
 
 /**
  * Buttons represent actions that are available to the user
@@ -31,11 +34,14 @@ export interface ButtonProps {
 
 const props = defineProps<ButtonProps>();
 
-// Strip undefined props so Vue doesn't override web component defaults (e.g. wa-icon library)
+// Strip undefined and false props before forwarding to the web component.
+// Vue boolean-prop coercion materializes absent optional Boolean props as
+// `false`, but Web Awesome elements read attribute presence as truthy, so
+// we must not forward `false` to <wa-*> (would render pill="" / loading="").
 const definedProps = computed(() => {
   const result: Record<string, unknown> = {};
-  for (const [key, value] of Object.entries(props)) {
-    if (value !== undefined) result[key] = value;
+  for (const [key, value] of Object.entries(props as Record<string, unknown>)) {
+    if (value !== undefined && value !== false) result[key] = value;
   }
   return result;
 });
@@ -46,7 +52,11 @@ const emit = defineEmits<{
   'wa-invalid': [event: CustomEvent];
 }>();
 
-const elementRef = ref<WaElement | null>(null);
+const elementRef = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  ensureLoaded();
+});
 
 const handleBlur = (e: Event) => emit('blur', e as CustomEvent);
 const handleFocus = (e: Event) => emit('focus', e as FocusEvent);
@@ -71,12 +81,12 @@ onUnmounted(() => {
 });
 
 defineExpose({
-  click: () => elementRef.value?.click?.(),
-  focus: (options: FocusOptions) => elementRef.value?.focus?.(options),
-  blur: () => elementRef.value?.blur?.(),
-  setCustomValidity: (message: string) => elementRef.value?.setCustomValidity?.(message),
-  formStateRestoreCallback: (state: string | File | FormData | null, reason: 'autocomplete' | 'restore') => elementRef.value?.formStateRestoreCallback?.(state, reason),
-  resetValidity: () => elementRef.value?.resetValidity?.(),
+  click: () => (elementRef.value as any)?.click?.(),
+  focus: (options: FocusOptions) => (elementRef.value as any)?.focus?.(options),
+  blur: () => (elementRef.value as any)?.blur?.(),
+  setCustomValidity: (message: string) => (elementRef.value as any)?.setCustomValidity?.(message),
+  formStateRestoreCallback: (state: string | File | FormData | null, reason: 'autocomplete' | 'restore') => (elementRef.value as any)?.formStateRestoreCallback?.(state, reason),
+  resetValidity: () => (elementRef.value as any)?.resetValidity?.(),
   element: elementRef,
 });
 </script>

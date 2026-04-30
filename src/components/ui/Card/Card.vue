@@ -1,8 +1,11 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
-import '@awesome.me/webawesome/dist/components/card/card.js';
-import type WaElement from '@awesome.me/webawesome/dist/components/card/card.js';
+import { ref, computed, onMounted } from 'vue';
 import './Card.css';
+
+let loadPromise: Promise<unknown> | null = null;
+function ensureLoaded() {
+  return (loadPromise ??= import('@awesome.me/webawesome/dist/components/card/card.js'));
+}
 
 /**
  * Cards can be used to group related subjects in a container
@@ -17,16 +20,27 @@ export interface CardProps {
 
 const props = defineProps<CardProps>();
 
-// Strip undefined props so Vue doesn't override web component defaults (e.g. wa-icon library)
+// Strip undefined and false props before forwarding to the web component.
+// Vue boolean-prop coercion materializes absent optional Boolean props as
+// `false`, but Web Awesome elements read attribute presence as truthy, so
+// we must not forward `false` to <wa-*> (would render pill="" / loading="").
 const definedProps = computed(() => {
   const result: Record<string, unknown> = {};
-  for (const [key, value] of Object.entries(props)) {
-    if (value !== undefined) result[key] = value;
+  for (const [key, value] of Object.entries(props as Record<string, unknown>)) {
+    if (value !== undefined && value !== false) result[key] = value;
   }
   return result;
 });
 
-const elementRef = ref<WaElement | null>(null);
+const emit = defineEmits<{
+  // No events for this component
+}>();
+
+const elementRef = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  ensureLoaded();
+});
 
 defineExpose({
   element: elementRef,

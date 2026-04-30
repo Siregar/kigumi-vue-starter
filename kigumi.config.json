@@ -17,27 +17,26 @@
   "webAwesome": {
     "version": "^3.4.0"
   },
-  "kigumiVersion": "0.18.3",
   "installedComponents": {
     "Button": {
       "source": "builtin",
-      "installedAt": "2026-04-01T11:36:30.326Z",
-      "kigumiVersion": "0.18.3"
+      "installedAt": "2026-04-25T21:10:39.904Z",
+      "kigumiVersion": "0.19.2"
     },
     "Card": {
       "source": "builtin",
-      "installedAt": "2026-03-24T22:36:46.751Z",
-      "kigumiVersion": "0.17.1"
+      "installedAt": "2026-04-25T21:10:39.905Z",
+      "kigumiVersion": "0.19.2"
     },
     "Icon": {
       "source": "builtin",
-      "installedAt": "2026-03-24T22:36:46.751Z",
-      "kigumiVersion": "0.17.1"
+      "installedAt": "2026-04-25T21:10:39.905Z",
+      "kigumiVersion": "0.19.2"
     },
     "Input": {
       "source": "builtin",
-      "installedAt": "2026-03-24T22:36:46.751Z",
-      "kigumiVersion": "0.17.1"
+      "installedAt": "2026-04-25T21:10:39.905Z",
+      "kigumiVersion": "0.19.2"
     },
     "Dialog": {
       "source": "builtin",
@@ -354,5 +353,6 @@
       "installedAt": "2026-04-04T05:49:31.421Z",
       "kigumiVersion": "0.18.3"
     }
-  }
+  },
+  "kigumiVersion": "0.18.3"
 }
