@@ -25,6 +25,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc -b && vite build",
+    "typecheck": "vue-tsc -b --noEmit",
     "lint": "eslint .",
     "preview": "vite preview"
   },
